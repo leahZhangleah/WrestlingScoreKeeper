@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/title_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/smile_face_image_size">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_sentiment_satisfied_black_40dp"
+            android:tint="@android:color/white" />
+    </FrameLayout>
+
+
+
+    <TextView
+        android:id="@+id/winning_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/vertical_space"
+        android:text="@string/win_team_a"
+        android:textSize="@dimen/button_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/horizontal_space"
+        android:layout_marginRight="@dimen/horizontal_space"
+        android:text="@string/alert_message"
+        android:textSize="@dimen/alert_message_text_size"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_marginTop="@dimen/vertical_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/no_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/horizontal_space"
+            android:layout_marginRight="@dimen/horizontal_space"
+            android:layout_marginBottom="@dimen/vertical_space"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:textColor="@android:color/black"
+            android:background="@drawable/textview_bg_transparent"/>
+        <Button
+            android:id="@+id/yes_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/horizontal_space"
+            android:layout_marginRight="@dimen/horizontal_space"
+            android:layout_marginBottom="@dimen/vertical_space"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textColor="@android:color/black"
+            android:background="@drawable/textview_bg_transparent"/>
+    </LinearLayout>
+
+</LinearLayout>

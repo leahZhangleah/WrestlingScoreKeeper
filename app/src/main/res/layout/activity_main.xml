@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.wrestlingscorekeeper.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/vertical_space"
+        android:layout_marginBottom="@dimen/vertical_space">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/horizontal_space"
+            android:layout_marginRight="@dimen/horizontal_space">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/homeTeam"
+                android:gravity="center"
+                android:text="@string/home"
+                android:textSize="@dimen/team_name_size"
+                android:textColor="@android:color/black" />
+
+
+            <TextView
+                android:id="@+id/home_total_score"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="@dimen/score_size"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/divide_line_width"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/horizontal_space"
+            android:layout_marginRight="@dimen/horizontal_space">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/guestTeam"
+                android:gravity="center"
+                android:text="@string/guest"
+                android:textSize="@dimen/team_name_size"
+                android:textColor="@android:color/black" />
+
+
+            <TextView
+                android:id="@+id/guest_total_score"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="@dimen/score_size"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/horizontal_space"
+        android:layout_marginRight="@dimen/horizontal_space">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/first_score_act"
+            android:textSize="@dimen/score_category_text_size"/>
+
+        <fragment
+            android:id="@+id/takedown_fragment"
+            android:name="com.example.android.wrestlingscorekeeper.ButtonViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/button_view"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/horizontal_space"
+        android:layout_marginRight="@dimen/horizontal_space">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/second_score_act"
+            android:textSize="@dimen/score_category_text_size" />
+
+        <fragment
+            android:id="@+id/escape_fragment"
+            android:name="com.example.android.wrestlingscorekeeper.ButtonViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/button_view" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/horizontal_space"
+        android:layout_marginRight="@dimen/horizontal_space">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/third_score_act"
+            android:textSize="@dimen/score_category_text_size" />
+
+        <fragment
+            android:id="@+id/reversal_fragment"
+            android:name="com.example.android.wrestlingscorekeeper.ButtonViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/button_view" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/horizontal_space"
+        android:layout_marginRight="@dimen/horizontal_space">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/fourth_score_act"
+            android:textSize="@dimen/score_category_text_size" />
+
+        <fragment
+            android:id="@+id/nearfall_fragment"
+            android:name="com.example.android.wrestlingscorekeeper.ButtonViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/button_view" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/horizontal_space"
+        android:layout_marginRight="@dimen/horizontal_space"
+        android:layout_marginTop="@dimen/vertical_space">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/textview_bg_transparent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/textview_bg_transparent"
+                android:gravity="center"
+                android:text="@string/table_round_1" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/textview_bg_transparent"
+                android:gravity="center"
+                android:text="@string/table_round_2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/textview_bg_transparent"
+                android:gravity="center"
+                android:text="@string/table_round_3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/textview_bg_home"
+                android:gravity="center"
+                android:text="@string/home"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/home_score_R1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/textview_bg_transparent"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/home_score_R2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/textview_bg_transparent"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/home_score_R3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/textview_bg_transparent"
+                android:gravity="center" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/textview_bg_guest"
+                android:gravity="center"
+                android:text="@string/guest"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/guest_score_R1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/textview_bg_transparent"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/guest_score_R2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/textview_bg_transparent"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/guest_score_R3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/textview_bg_transparent"
+                android:gravity="center" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/reset_btn_margin"
+        android:layout_marginRight="@dimen/reset_btn_margin"
+        android:layout_marginTop="@dimen/vertical_space"
+        android:text="@string/reset"
+        android:background="@color/colorPrimary" />
+</LinearLayout>

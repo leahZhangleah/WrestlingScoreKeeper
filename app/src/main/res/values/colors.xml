@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#229b7f</color>
+    <color name="colorPrimaryDark">#006c53</color>
+    <color name="colorAccent">#FFCCBC</color>
+    <color name="homeTeam">#0288D1</color>
+    <color name = "guestTeam">#FFC107</color>
+    <color name = "tie_color">#4CAF50</color>
+</resources>

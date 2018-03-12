@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="team_name_size">20sp</dimen>
+    <dimen name="divide_line_width">1dp</dimen>
+    <dimen name="vertical_space">10dp</dimen>
+    <dimen name="horizontal_space">16dp</dimen>
+    <dimen name="button_view_radius">1dp</dimen>
+    <dimen name="button_text_size">20sp</dimen>
+    <dimen name="smile_face_image_size">80dp</dimen>
+    <dimen name="alert_message_text_size">15sp</dimen>
+    <dimen name="reset_btn_margin">120dp</dimen>
+    <dimen name="score_category_text_size">15sp</dimen>
+    <dimen name="score_size">50sp</dimen>
+</resources>
